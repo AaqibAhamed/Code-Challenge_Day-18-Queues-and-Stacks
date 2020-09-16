@@ -10,22 +10,22 @@ namespace Code_Challenge_Day_18_Queues_and_Stacks
 
         public Queue<char> charQueue = new Queue<char>();
 
-        public char dequeueCharacter()
+        public char DequeueCharacter()
         {
             return charQueue.Dequeue();
         }
 
-        public char popCharacter()
+        public char PopCharacter()
         {
             return charStack.Pop();
         }
 
-        public void enqueueCharacter(char c)
+        public void EnqueueCharacter(char c)
         {
             charQueue.Enqueue(c);
         }
 
-        public void pushCharacter(char c)
+        public void PushCharacter(char c)
         {
             charStack.Push(c);
         }
