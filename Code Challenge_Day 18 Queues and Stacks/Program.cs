@@ -10,7 +10,7 @@ namespace Code_Challenge_Day_18_Queues_and_Stacks
             string s = Console.ReadLine();
 
             // create the Solution class object p.
-            Program obj = new Program();
+            Palindrome obj = new Palindrome();
 
             // push/enqueue all the characters of string s to stack.
             foreach (char c in s)
@@ -44,33 +44,9 @@ namespace Code_Challenge_Day_18_Queues_and_Stacks
                 Console.Write("The word, {0}, is not a palindrome.", s);
             }
 
-            Console.WriteLine("ASasasxcdsv aga");
-
             Console.ReadLine();
         }
 
-        public Stack<char> charStack = new Stack<char>();
-
-        public Queue<char> charQueue = new Queue<char>();
-
-        private object dequeueCharacter()
-        {
-          return charQueue.Dequeue();
-        }
-
-        private object popCharacter()
-        {
-            return charStack.Pop();
-        }
-
-        private void enqueueCharacter(char c)
-        {
-            charQueue.Enqueue(c);
-        }
-
-        private void pushCharacter(char c)
-        {
-            charStack.Push(c);
-        }
+        
     }
 }
